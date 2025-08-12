@@ -13,9 +13,9 @@ let listaAmigos = document.querySelector('#listaAmigos');
 
 // Função para adicionar amigo à lista
 function adicionarAmigo(){
-    let campoNome = document.querySelector('#amigo').value;
-    
-    //validacao
+    let campoNome = document.querySelector('#amigo').value; 
+
+//validacao
     if (amigos.includes(campoNome)) {
         alert('Esse nome já foi adicionado ao sorteio.');
         return;
@@ -28,20 +28,10 @@ function adicionarAmigo(){
         amigos.push(campoNome);
         listaAmigos.innerHTML += `<li> ${campoNome} </li>`;
         limparCampo('#amigo');
-        console.log(amigos);
-
-        // Botão para remover amigo
-        const btnRemover = document.createElement('button');
-        btnRemover.textContent = '❌';
-        btnRemover.classList.add('remove-btn');
-        btnRemover.onclick = () => removerAmigo(index);
-
-        li.appendChild(btnRemover);
-        lista.appendChild(li);
+        //console.log(amigos);
     }
      
 }
-
 //Função para o botão sortear amigo
 function sortearAmigo(){
     let botaoSortearAmigo = document.querySelector('.button-draw');
