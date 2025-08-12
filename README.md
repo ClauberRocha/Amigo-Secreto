@@ -7,7 +7,7 @@ Permite adicionar nomes, listar participantes, sortear aleatoriamente e até evi
 ## 🚀 Funcionalidades
 **Adicionar participantes** à lista.
 **Validação automática** visa impedir nomes duplicados.
-**Sorteio aleatório** de um participante usando `Math.random()` + `Math.round()`
+**Sorteio aleatório** de um participante usando `Math.random()` + `Math.floor()`
 **Design responsivo** para desktop e dispositivos móveis
 
 ## 🛠️ Tecnologias Utilizadas
