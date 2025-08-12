@@ -10,7 +10,11 @@
 
 // Impede que números sejam digitados no campo de nome
     document.querySelector('#amigo').addEventListener('input', function () {
+
+// Aceita apenas letras (A-Z, a-z), acentos e espaços
+    this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '');
     this.value = this.value.replace(/[0-9]/g, ''); // remove números
+
 });
 
 // Lista para armazenar os amigos
