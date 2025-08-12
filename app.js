@@ -10,11 +10,11 @@
 
 // Impede que números sejam digitados no campo de nome
     document.querySelector('#amigo').addEventListener('input', function () {
-
+        
 // Aceita apenas letras (A-Z, a-z), acentos e espaços
     this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '');
     this.value = this.value.replace(/[0-9]/g, ''); // remove números
-
+    
 });
 
 // Lista para armazenar os amigos
@@ -53,10 +53,7 @@
 //Função para o botão sortear amigo
     function sortearAmigo(){
     let botaoSortearAmigo = document.querySelector('.button-draw');
-        //alert ('Sorteando amigo secreto');
-    
-    let numeroAleatorio = gerarNumeroAleatorio(amigos.length -1); //-1
-    console.log(amigos[numeroAleatorio])
+    let numeroAleatorio = gerarNumeroAleatorio(amigos.length -1);
     let amigoEscolhido = amigos[numeroAleatorio]
 
     let resultado = document.querySelector("#resultado");
@@ -64,14 +61,15 @@
 
     listaAmigos.innerHTML = ''
         if (amigos.length === 0){
-        resultado.innerHTML= ('Não há mais nomes a serem sorteados!')
+        resultado.innerHTML= ('Não há mais nomes para sortear!')
     }
     amigos.splice(numeroAleatorio,1)
 }
 
-//Gerando uma função para a criação de numero aleatório da lista
+//Função para a criação de numero aleatório da lista
     function gerarNumeroAleatorio(num) {
-    const result = Math.round(Math.random() * (0 - num) + num);
+        return Math.floor(Math.random() * (num + 1));
+    //const result = Math.round(Math.random() * (0 - num) + num);
     //return parseInt(Math.random() * num + 1);
-    return result
+    //return result
 }
