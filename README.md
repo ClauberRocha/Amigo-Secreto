@@ -26,4 +26,5 @@ amigo-secreto/
 ├── style.css              # Estilização da página
 ├── app.js                 # Lógica em JavaScript
 └── README.md              # Documentação do projeto
+
 Desenvolvido por Clauber Rocha
