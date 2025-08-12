@@ -8,6 +8,11 @@
     if (input) input.value = '';
 }
 
+// Impede que números sejam digitados no campo de nome
+    document.querySelector('#amigo').addEventListener('input', function () {
+    this.value = this.value.replace(/[0-9]/g, ''); // remove números
+});
+
 // Lista para armazenar os amigos
     let amigos = [];
     let listaAmigos = document.querySelector('#listaAmigos');
