@@ -17,7 +17,7 @@ function adicionarAmigo(){
     
     //validacao
     if (amigos.includes(campoNome)) {
-        alert('Esse nome já foi adicionado.');
+        alert('Esse nome já foi adicionado ao sorteio.');
         return;
     }
 
@@ -26,14 +26,11 @@ function adicionarAmigo(){
 
     } else{
         amigos.push(campoNome);
-        listaAmigos.innerHTML += `<li> ${campoNome}</li>`;
+        listaAmigos.innerHTML += `<li> ${campoNome} </li>`;
         limparCampo('#amigo');
         console.log(amigos);
-    }
-     
-}
 
-// Botão para remover amigo
+        // Botão para remover amigo
         const btnRemover = document.createElement('button');
         btnRemover.textContent = '❌';
         btnRemover.classList.add('remove-btn');
@@ -41,8 +38,11 @@ function adicionarAmigo(){
 
         li.appendChild(btnRemover);
         lista.appendChild(li);
+    }
+     
+}
 
-//Gerando uma função para o botão sortear amigo
+//Função para o botão sortear amigo
 function sortearAmigo(){
     let botaoSortearAmigo = document.querySelector('.button-draw');
     //alert ('Sorteando amigo secreto');
@@ -51,7 +51,7 @@ function sortearAmigo(){
     let amigoEscolhido = amigos[numeroAleatorio]
 
     let resultado = document.querySelector("#resultado");
-    resultado.innerHTML = (`O amigo secreto sorteado é ${amigoEscolhido}`);
+    resultado.innerHTML = `<li> 🎉O amigo secreto sorteado é <strong>${amigoEscolhido}</strong></li`;
 
     listaAmigos.innerHTML = ''
         if (amigos.length === 0){
