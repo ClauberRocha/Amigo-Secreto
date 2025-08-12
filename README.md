@@ -1,3 +1,5 @@
+Esse é o meu projeto inicial, continuo aprimorando os estudos.
+
 # 🎁 Amigo Secreto
 Trata de uma aplicação simples e divertida para gerenciar um sorteio de **Amigo Secreto** direto no navegador.  
 Permite adicionar nomes, listar participantes, sortear aleatoriamente e até evitar repetições até que todos sejam escolhidos.
@@ -24,3 +26,4 @@ amigo-secreto/
 ├── style.css              # Estilização da página
 ├── app.js                 # Lógica em JavaScript
 └── README.md              # Documentação do projeto
+Desenvolvido por Clauber Rocha
