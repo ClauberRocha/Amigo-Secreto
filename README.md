@@ -4,6 +4,16 @@ Esse é o meu projeto inicial, continuo aprimorando os estudos.
 Trata de uma aplicação simples e divertida para gerenciar um sorteio de **Amigo Secreto** direto no navegador.  
 Permite adicionar nomes, listar participantes, sortear aleatoriamente e até evitar repetições até que todos sejam escolhidos.
 
+
+### Tela inicial
+![Tela Inicial](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/tela-1.png)
+
+## Adicionando nomes
+![Adicionando Nomes]
+
+
+
+
 ## 🚀 Funcionalidades
 **Adicionar participantes** à lista.
 **Validação automática** visa impedir nomes duplicados.
