@@ -20,6 +20,25 @@
 // Lista para armazenar os amigos
     let amigos = [];
     let listaAmigos = document.querySelector('#listaAmigos');
+    let amigo
+
+// Atualiza a lista no HTML
+function atualizarLista() {
+    listaAmigos.innerHTML = '';
+    amigos.forEach((amigo, index) => {
+        const li = document.createElement('li');
+        li.textContent = amigo;
+
+        // Botão para remover amigo
+        const btnRemover = document.createElement('button');
+        btnRemover.textContent = '❌';
+        btnRemover.classList.add('remove-btn');
+        btnRemover.onclick = () => removerAmigo(index);
+
+        li.appendChild(btnRemover);
+        listaAmigos.appendChild(li);
+    });
+}
 
 // Função para adicionar amigo à lista
     function adicionarAmigo(){
@@ -40,7 +59,7 @@
     if (amigos.some(a => a.toLowerCase() === campoNome.toLowerCase())) {
         alert('Esse nome já foi adicionado ao sorteio.');
         return;
-    
+            
     }  else{
         amigos.push(campoNome);
         listaAmigos.innerHTML += `<li> ${campoNome} </li>`;
@@ -49,7 +68,6 @@
     }
      
 }
-
 //Função para o botão sortear amigo
     function sortearAmigo(){
     let botaoSortearAmigo = document.querySelector('.button-draw');

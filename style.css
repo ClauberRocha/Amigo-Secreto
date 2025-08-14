@@ -172,3 +172,22 @@ button {
         width: 100%;
     }
 }
+
+small {
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+    text-align: left;
+}
+
+.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+}
