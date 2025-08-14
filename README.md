@@ -9,9 +9,11 @@ Permite adicionar nomes, listar participantes, sortear aleatoriamente e até evi
 ![Tela Inicial](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/tela-1.png)
 
 ## Adicionando nomes
-![Adicionando Nomes]
+![Adicionando Nomes](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/tela-2.png)
 
 
+### Resultado do sorteio
+![Resultado do Sorteio](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/tela-3.png)
 
 
 ## 🚀 Funcionalidades
