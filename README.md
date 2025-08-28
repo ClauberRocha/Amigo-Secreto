@@ -11,15 +11,18 @@ Permite adicionar nomes, listar participantes, sortear aleatoriamente e até evi
 ## Adicionando nomes
 ![Adicionando Nomes](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/adicionando.png)
 
-
 ### Resultado do sorteio
 ![Resultado do Sorteio](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/sorteio.gif)
+
+### Zerando o sorteio
+![Zerando o Sorteio]
 
 
 ## 🚀 Funcionalidades
 **Adicionar participantes** à lista.
 **Validação automática** visa impedir nomes duplicados.
 **Sorteio aleatório** de um participante usando `Math.random()` + `Math.floor()`
+**Zerando o Sorteio** reseta o sorteio limpando a lista
 **Design responsivo** para desktop e dispositivos móveis
 
 ## 🛠️ Tecnologias Utilizadas
