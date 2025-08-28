@@ -6,14 +6,14 @@ Permite adicionar nomes, listar participantes, sortear aleatoriamente e até evi
 
 
 ### Tela inicial
-![Tela Inicial](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/tela-1.png)
+![Tela Inicial](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/tela%20inicial.png)
 
 ## Adicionando nomes
-![Adicionando Nomes](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/tela-2.png)
+![Adicionando Nomes](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/adicionando.png)
 
 
 ### Resultado do sorteio
-![Resultado do Sorteio](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/tela-3.png)
+![Resultado do Sorteio](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/sorteio.gif)
 
 
 ## 🚀 Funcionalidades
