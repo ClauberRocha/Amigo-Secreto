@@ -6,7 +6,7 @@ Permite adicionar nomes, listar participantes, sortear aleatoriamente e até evi
 
 
 ### Tela inicial
-![Tela Inicial](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/01.tela inicial.png)
+![Tela Inicial](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/tela inicial.png)
 
 ## Adicionando nomes
 ![Adicionando Nomes](https://github.com/ClauberRocha/Amigo-Secreto/blob/main/assets/img/02.adicionando_nomes.gif)
