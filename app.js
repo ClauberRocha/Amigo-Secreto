@@ -22,24 +22,6 @@
     let listaAmigos = document.querySelector('#listaAmigos');
     let amigo
 
-// Atualiza a lista no HTML
-function atualizarLista() {
-    listaAmigos.innerHTML = '';
-    amigos.forEach((amigo, index) => {
-        const li = document.createElement('li');
-        li.textContent = amigo;
-
-        // Botão para remover amigo
-        const btnRemover = document.createElement('button');
-        btnRemover.textContent = '❌';
-        btnRemover.classList.add('remove-btn');
-        btnRemover.onclick = () => removerAmigo(index);
-
-        li.appendChild(btnRemover);
-        listaAmigos.appendChild(li);
-    });
-}
-
 // Função para adicionar amigo à lista
     function adicionarAmigo(){
     let campoNome = document.querySelector('#amigo').value.trim()
@@ -68,6 +50,7 @@ function atualizarLista() {
     }
      
 }
+
 //Função para o botão sortear amigo
     function sortearAmigo(){
     let botaoSortearAmigo = document.querySelector('.button-draw');
@@ -91,3 +74,14 @@ function atualizarLista() {
     //return parseInt(Math.random() * num + 1);
     //return result
 }
+
+    function novoSorteio() {
+        amigos = []
+        listaAmigos.innerHTML = ''
+        alert("Tem certeza que deseja criar um novo sorteio?");
+        
+    }
+
+    const resultado = document.getElementById('#resultado');
+    resultado.innerHTML = ''; // limpa o sorteio anterior
+    sortearAmigo(); // chama novamente o sorteio

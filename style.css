@@ -89,8 +89,12 @@ button {
 }
 
 .button-container {
-    margin-top: 20px;
-    text-align: center;
+/*    margin-top: 20px;
+    text-align: center;*/
+    display: flex;
+    gap: 10px; /* espaço entre os botões */
+    justify-content: center; /* centraliza na horizontal */
+    flex-wrap: wrap; /* evita quebra feia em telas menores */
 }
 
 .button-draw {
